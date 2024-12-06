@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class evenOdd {
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("input number : ");
+            int N = scanner.nextInt();
+
+            int NAbs = Math.abs(N);
+            if (N % 2 == 0) {
+                System.out.println(N + " is Even");
+            } else {
+                System.out.println(N + " is Odd");
+            }
+        }
+    }
+}
